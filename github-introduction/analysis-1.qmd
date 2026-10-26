@@ -1,8 +1,40 @@
 ---
-title: "Analysis 1"
+title: "A Beautiful Graphic"
 author: "Madison Goin"
 format: html
+execute: echo: false
 ---
 
+```{r}
+#| message: false
+
+library(tidyverse)
+```
+
+
+```{r}
+#| message: false
+#| fig-width: 9
+#| fig-height: 6
+
+ggplot(mpg, aes(x = class, y = hwy, fill = class)) +
+  geom_boxplot(alpha = 0.85, outlier.shape = 21) +
+  labs(
+    title = "Which Cars Get the Best Gas Mileage?",
+    subtitle = "Highway fuel efficiency across vehicle classes",
+    x = "Vehicle Class",
+    y = "Highway Fuel Economy (miles per gallon)",
+    caption = "Source: Built-in ggplot2 mpg dataset"
+  ) +
+  scale_fill_brewer(palette = "Set2") +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title = element_text(face = "bold", size = 18),
+    plot.subtitle = element_text(color = "gray40"),
+    legend.position = "none",
+    panel.grid.minor = element_blank(),
+    axis.text.x = element_text(angle = 30, hjust = 1)
+  )
+```
 
 
