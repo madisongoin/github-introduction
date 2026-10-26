@@ -1,0 +1,25 @@
+---
+title: "Introduction to GitHub"
+format: html
+---
+
+# Introduction to GitHub
+
+GitHub is a platform for hosting Git repositories and collaborating on projects.
+Git records changes to files, while GitHub makes those changes easier to share
+and review with others.
+
+## A basic collaboration workflow
+
+1. Create or clone a repository to start working with a project.
+2. Make changes on a branch so your work is separate from the default branch.
+3. Commit your changes with a message that describes what changed.
+4. Open a pull request to discuss and review the changes.
+5. Merge the pull request when the work is ready to become part of the project.
+
+## Key terms
+
+- **Repository:** A project folder and its tracked history.
+- **Branch:** An independent line of work within a repository.
+- **Commit:** A saved snapshot of changes.
+- **Pull request:** A proposal to review and merge changes from one branch into another.
